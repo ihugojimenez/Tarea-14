@@ -10,10 +10,12 @@ namespace DAL
 {
     public class AlmacenBancasDB : DbContext
     {
-        public AlmacenBancasDB() : base("name = hello")
+        public AlmacenBancasDB() : base("name = AlmacenBancasDB")
         {
 
         }
+
+        
 
     }
 }
