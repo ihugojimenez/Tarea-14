@@ -1,4 +1,4 @@
-﻿using DAL;
+﻿using BLL;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -28,6 +28,7 @@ namespace MainWindowsForms
             usuario.nombre = NombreTextBox.Text;
             usuario.nombreusuario = UserTextBox.Text;
 
+            UsuariosBLL.Insertar(usuario);
 
            
         }
