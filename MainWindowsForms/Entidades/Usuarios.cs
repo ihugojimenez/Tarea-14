@@ -18,6 +18,13 @@ namespace Entidades
 
         }
 
+        public Usuarios(string nombreusuario, string Contraseña, string nombre, string apellido)
+        {
+            this.apellido = apellido;
+            this.Contraseña = Contraseña;
+            this.nombre = nombre;
+            this.nombreusuario = nombreusuario;
+        }
 
     }
 }
