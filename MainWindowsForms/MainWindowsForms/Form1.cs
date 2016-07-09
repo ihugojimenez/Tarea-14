@@ -21,14 +21,15 @@ namespace MainWindowsForms
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            Usuarios usuario = new Usuarios("FernandoDrizzy", "123", "Hugo", "Jimenez");
+            Usuarios usuario = new Usuarios();
 
-            using (var db = new AlmacenBancasDB())
-            {
-                db.Usuarios.Add(usuario);
-                db.SaveChanges();
-                db.Dispose(); 
-            }
+            usuario.apellido = ApellidoTextBox.Text;
+            usuario.Contraseña = PassTextBox.Text;
+            usuario.nombre = NombreTextBox.Text;
+            usuario.nombreusuario = UserTextBox.Text;
+
+
+           
         }
     }
 }
