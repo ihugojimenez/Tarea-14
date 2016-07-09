@@ -22,16 +22,5 @@ namespace DAL.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-2IK02I9\\SQLEXPRESS;Initial Catalog=AlmacenBancas;Integrated S" +
-            "ecurity=True")]
-        public string Conection {
-            get {
-                return ((string)(this["Conection"]));
-            }
-        }
     }
 }
